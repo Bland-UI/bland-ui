@@ -1,0 +1,18 @@
+{
+	"name": "root",
+	"version": "0.0.0",
+	"engines": {
+		"node": ">= 20.x"
+	},
+	"scripts": {
+		"build:storybook-react": "pnpm --filter storybook-react build",
+		"build:blandui-react": "pnpm --filter blandui-react build",
+		"dev:storybook-react": "pnpm --filter storybook-react dev"
+	},
+	"devDependencies": {
+		"@parcel/packager-ts": "2.12.0",
+		"@parcel/transformer-typescript-types": "2.12.0",
+		"typescript": ">=3.0.0"
+	},
+	"packageManager": "pnpm@9.1.1"
+}
