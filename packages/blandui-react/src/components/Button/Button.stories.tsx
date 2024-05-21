@@ -1,22 +1,22 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import { Button } from "./Button";
+import type { Meta, StoryObj } from '@storybook/react';
+import { Button } from './Button';
 
 const meta: Meta<typeof Button> = {
-	title: "Component/Button",
+	title:     'Component/Button',
 	component: Button,
-	argTypes: {
+	argTypes:  {
 		disabled: {
-			control: "boolean",
+			control: 'boolean',
 		},
 	},
 };
 
-const sizes = ["sm", "md", "lg"] as const;
-const variants = ["primary", "secondary", "ghost", "stroke"] as const;
+const sizes = ['sm', 'md', 'lg'] as const;
+const variants = ['primary', 'secondary', 'ghost', 'stroke'] as const;
 const labels = {
-	sm: "Small",
-	md: "Medium",
-	lg: "Large",
+	sm: 'Small',
+	md: 'Medium',
+	lg: 'Large',
 };
 
 export default meta;
