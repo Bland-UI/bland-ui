@@ -1,0 +1,15 @@
+{
+	"extends": [
+		"eslint-config-lludol",
+		"plugin:@typescript-eslint/recommended"
+	],
+	"parser": "@typescript-eslint/parser",
+	"plugins": [
+		"@typescript-eslint"
+	],
+	"root": true,
+	"rules": {
+		"require-jsdoc": "off",
+		"max-len": "off"
+	}
+}

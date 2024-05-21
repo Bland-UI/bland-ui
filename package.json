@@ -6,8 +6,11 @@
 	},
 	"scripts": {
 		"build:storybook-react": "pnpm --filter storybook-react build",
+		"build:blandui": "pnpm --filter blandui build",
 		"build:blandui-react": "pnpm --filter blandui-react build",
 		"dev:storybook-react": "pnpm --filter storybook-react dev",
+		"dev:blandui": "pnpm --filter blandui dev",
+		"dev:blandui-react": "pnpm --filter blandui-react dev",
 		"start:storybook-react": "pnpm --filter storybook-react start"
 	},
 	"devDependencies": {

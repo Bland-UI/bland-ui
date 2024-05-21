@@ -1,0 +1,66 @@
+{
+	"folders": [
+		{
+			"name": "ROOT",
+			"path": "../"
+		},
+		{
+			"name": "apps/storybook-react",
+			"path": "../apps/storybook-react"
+		},
+		{
+			"name": "packages/blandui",
+			"path": "../packages/blandui"
+		},
+		{
+			"name": "packages/blandui-react",
+			"path": "../packages/blandui-react"
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"node_modules/": true,
+			"dist": true,
+			"blandui-*/": true
+		},
+		"scm.defaultViewMode": "tree",
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "dev:storybook-react",
+				"type": "node",
+				"request": "launch",
+				"runtimeExecutable": "pnpm",
+				"runtimeArgs": [
+					"dev:storybook-react"
+				],
+				"console": "internalConsole",
+				"outputCapture": "std"
+			},
+			{
+				"name": "dev:blandui",
+				"type": "node",
+				"request": "launch",
+				"runtimeExecutable": "pnpm",
+				"runtimeArgs": [
+					"dev:blandui"
+				],
+				"console": "internalConsole",
+				"outputCapture": "std"
+			},
+			{
+				"name": "dev:blandui-react",
+				"type": "node",
+				"request": "launch",
+				"runtimeExecutable": "pnpm",
+				"runtimeArgs": [
+					"dev:blandui-react"
+				],
+				"console": "internalConsole",
+				"outputCapture": "std"
+			}
+		],
+	}
+}
