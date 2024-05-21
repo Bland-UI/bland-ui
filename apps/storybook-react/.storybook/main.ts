@@ -5,7 +5,6 @@ const config: StorybookConfig = {
 		"../../../packages/blandui-react/src/**/*.stories.@(ts|tsx)",
 	],
 	addons: [
-		"@storybook/addon-onboarding",
 		"@storybook/addon-links",
 		"@storybook/addon-essentials",
 		"@chromatic-com/storybook",

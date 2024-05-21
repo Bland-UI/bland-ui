@@ -2,7 +2,7 @@
 const config = {
 	plugins: [
 		require("autoprefixer"),
-		require("tailwindcss")("../../packages/blandui-react/tailwind.config.js"),
+		require("tailwindcss"),
 	],
 };
 
