@@ -30,7 +30,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 		},
 		ref,
 	) => {
-		const baseCn =			'flex items-center justify-center font-semibold capitalize';
+		const baseCn = 'flex items-center justify-center font-semibold capitalize';
 
 		const sizeClasses = {
 			sm: 'rounded-md gap-sm py-sm px-sm text-[0.625rem] leading-[1rem]',
