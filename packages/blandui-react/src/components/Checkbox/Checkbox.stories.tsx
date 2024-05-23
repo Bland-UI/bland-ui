@@ -14,11 +14,15 @@ export const Default: Story = {
 		<div className="flex flex-col gap-lg items-start justify-center">
 			<div className="flex gap-md">
 				<Checkbox size="sm" checked={false} />
+				<Checkbox size="sm" checked={false} disabled />
 				<Checkbox size="sm" checked />
+				<Checkbox size="sm" checked disabled />
 			</div>
 			<div className="flex gap-md">
 				<Checkbox size="md" checked={false} />
+				<Checkbox size="md" checked={false} disabled />
 				<Checkbox size="md" checked />
+				<Checkbox size="md" checked disabled />
 			</div>
 		</div>
 	),

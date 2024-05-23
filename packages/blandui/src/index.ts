@@ -23,6 +23,8 @@ const blanduiPlugin = plugin(({
 			colors,
 			backgroundColor,
 			borderColor,
+			outlineColor: borderColor,
+			ringColor:    borderColor,
 			textColor,
 
 			// Effect
@@ -34,24 +36,6 @@ const blanduiPlugin = plugin(({
 			gap,
 			padding,
 			spacing,
-
-			// TO SORT
-			ringColor: {
-				inverse: '#FFF',
-				subtle:  colors.carbon[100],
-				bold:    colors.carbon[200],
-				focused: colors.carbon[300],
-				hover:   colors.gray[100],
-
-				success:           colors.green[500],
-				'success-focused': colors.green[200],
-
-				danger:           colors.red[500],
-				'danger-focused': colors.red[100],
-
-				warning:           colors.amber[500],
-				'warning-focused': colors.amber[200],
-			},
 
 			// WIP
 			fontSize: {
