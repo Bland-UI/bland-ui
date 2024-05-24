@@ -1,7 +1,7 @@
 {
-	"name": "blandui",
+	"name": "@blandui/blandui",
 	"version": "0.0.1",
-	"description": "",
+	"description": " A generic UI kit. This package includes a comprehensive design system and a Tailwind CSS plugin for seamless styling integration. Designed to be simple and customizable, BlandUi provides the components you need for your everyday projects. Access the Figma file via our website for detailed design resources.",
 	"main": "dist/cjs/index.cjs",
 	"module": "dist/esm/index.mjs",
 	"types": "dist/types/index.d.ts",
@@ -20,11 +20,9 @@
 	"scripts": {
 		"dev": "rollup -cw",
 		"build": "rollup -c",
-		"lint": "eslint . --ext .ts"
+		"lint": "eslint . --ext .ts",
+		"prepublishOnly": "pnpm run build"
 	},
-	"keywords": [],
-	"author": "lludol",
-	"license": "MIT",
 	"dependencies": {
 		"@tailwindcss/forms": "^0.5.7",
 		"tailwindcss": "^3.4.3"
@@ -39,5 +37,22 @@
 		"rollup-plugin-esbuild": "^6.1.1",
 		"rollup-plugin-peer-deps-external": "^2.2.4",
 		"typescript": "^5.4.5"
-	}
+	},
+	"author": "lludol",
+	"license": "MIT",
+	"bugs": "https://github.com/Bland-UI/blandui/issues",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Bland-UI/blandui.git",
+		"directory": "packages/blandui"
+	},
+	"keywords": [
+		"design-system",
+		"blandui",
+		"blandui-react",
+		"react",
+		"tailwind",
+		"tailwindcss",
+		"tailwind-css"
+	]
 }

@@ -1,17 +1,11 @@
 {
-	"name": "storybook-react",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
+	"name": "@blandui/storybook-react",
+	"version": "0.0.0",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
 		"dev": "storybook dev -p 6006",
 		"build": "storybook build",
 		"start": "npx http-server storybook-static -p $PORT"
 	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
 	"dependencies": {
 		"@tailwindcss/forms": "^0.5.7",
 		"autoprefixer": "^10.4.19",
@@ -30,6 +24,5 @@
 		"@storybook/react": "^8.1.1",
 		"@storybook/test": "^8.1.1",
 		"storybook": "^8.1.1"
-	},
-	"browserslist": "> 0.5%, last 2 versions, not dead"
+	}
 }

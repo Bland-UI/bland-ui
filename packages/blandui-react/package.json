@@ -1,7 +1,7 @@
 {
-	"name": "blandui-react",
+	"name": "@blandui/blandui-react",
 	"version": "0.0.1",
-	"description": "",
+	"description": "A generic UI kit for React. This library offers a collection of reusable, customizable, and accessible React components based on the BlandUi design system. Ideal for everyday projects, these components are designed as simply as possible to allow easy customization and integration into any project.",
 	"main": "dist/cjs/index.cjs",
 	"module": "dist/esm/index.mjs",
 	"types": "dist/types/index.d.ts",
@@ -30,12 +30,18 @@
 	"scripts": {
 		"dev": "rollup -cw",
 		"build": "rollup -c",
-		"lint": "eslint . --ext .ts,.tsx"
+		"lint": "eslint . --ext .ts,.tsx",
+		"prepublishOnly": "pnpm run build"
 	},
 	"peerDependencies": {
 		"react": ">=18",
 		"react-dom": ">=18",
 		"tailwindcss": "^3"
+	},
+	"dependencies": {
+		"blandui": "workspace:*",
+		"clsx": "^2.1.1",
+		"tailwind-merge": "^2.3.0"
 	},
 	"devDependencies": {
 		"@rollup/plugin-typescript": "^11.1.6",
@@ -58,9 +64,19 @@
 	},
 	"author": "lludol",
 	"license": "MIT",
-	"dependencies": {
-		"blandui": "workspace:*",
-		"clsx": "^2.1.1",
-		"tailwind-merge": "^2.3.0"
-	}
+	"bugs": "https://github.com/Bland-UI/blandui/issues",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Bland-UI/blandui.git",
+		"directory": "packages/blandui-react"
+	},
+	"keywords": [
+		"design-system",
+		"blandui",
+		"blandui-react",
+		"react",
+		"tailwind",
+		"tailwindcss",
+		"tailwind-css"
+	]
 }
