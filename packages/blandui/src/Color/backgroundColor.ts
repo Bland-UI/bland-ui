@@ -145,8 +145,4 @@ export default {
 	'menu-surface-rest':    colors.gray[0],
 	'menu-surface-hover':   colors.gray[50],
 	'menu-surface-pressed': colors.gray[100],
-
-	// TO SORT
-	'text-input-surface-rest': '#F2F2F2',
-	'surface-rest':            '#FFF',
 };

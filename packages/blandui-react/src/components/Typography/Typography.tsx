@@ -8,6 +8,7 @@ const elementMap = {
 	body:    { lg: 'p', md: 'p', sm: 'p' },
 };
 
+// TODO Display also the -bold here
 const classMap = {
 	display: { lg: 'display-lg', md: 'display-md', sm: 'display-sm' },
 	heading: { lg: 'heading-lg', md: 'heading-md', sm: 'heading-sm' },
@@ -15,7 +16,7 @@ const classMap = {
 	body:    { lg: 'body-lg', md: 'body-md', sm: 'body-sm' },
 };
 
-interface TypographyProps extends PropsWithChildren {
+export interface TypographyProps extends PropsWithChildren {
 	className?: string;
 	size?: 'sm' | 'md' | 'lg';
 	type?: 'display' | 'heading' | 'title' | 'body';
@@ -23,7 +24,7 @@ interface TypographyProps extends PropsWithChildren {
 	as?: ElementType;
 }
 
-const Typography = forwardRef(
+export const Typography = forwardRef(
 	(
 		{
 			className,
@@ -37,7 +38,7 @@ const Typography = forwardRef(
 		ref,
 	) => {
 		const Component = as || elementMap[type][size];
-		const classes = cn(`${classMap[type][size]}${weight === 'regular' ? '' : '-bold'}`, className);
+		const classes = cn(classMap[type][size], weight === 'bold' ? 'font-semibold' : 'font-normal', className);
 
 		return (
 			<Component ref={ref} className={classes} {...props}>
@@ -48,5 +49,3 @@ const Typography = forwardRef(
 );
 
 Typography.displayName = 'Typography';
-export { Typography };
-export type { TypographyProps };

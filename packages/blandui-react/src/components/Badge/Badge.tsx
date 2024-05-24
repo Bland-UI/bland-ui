@@ -4,14 +4,14 @@ import cn from '../../utils/cn';
 type BadgeColor = 'brand' | 'gray' | 'green' | 'red' | 'amber';
 type BadgeVariant = 'primary' | 'secondary' | 'stroke';
 
-interface BadgeProps extends PropsWithChildren {
+export interface BadgeProps extends PropsWithChildren {
 	className?: string;
 	size?: 'sm' | 'md' | 'lg' | 'xl';
 	color?: BadgeColor;
 	variant?: BadgeVariant;
 }
 
-const Badge = forwardRef<HTMLDivElement, BadgeProps>(({
+export const Badge = forwardRef<HTMLDivElement, BadgeProps>(({
 	className,
 	size = 'md',
 	color = 'brand',
@@ -70,5 +70,3 @@ const Badge = forwardRef<HTMLDivElement, BadgeProps>(({
 });
 
 Badge.displayName = 'Badge';
-export { Badge };
-export type { BadgeProps };

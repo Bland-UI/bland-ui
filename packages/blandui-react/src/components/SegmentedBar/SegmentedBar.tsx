@@ -1,7 +1,7 @@
 import { forwardRef, useCallback } from 'react';
 import cn from '../../utils/cn';
 
-interface SegmentedBarProps {
+export interface SegmentedBarProps {
 	className?: string;
 	size?: 'md' | 'lg';
 	activeTab?: number | string;
@@ -9,7 +9,7 @@ interface SegmentedBarProps {
 	onClick?: (value: number | string) => void;
 }
 
-const SegmentedBar = forwardRef<HTMLDivElement, SegmentedBarProps>(
+export const SegmentedBar = forwardRef<HTMLDivElement, SegmentedBarProps>(
 	(
 		{
 			className,
@@ -60,5 +60,3 @@ const SegmentedBar = forwardRef<HTMLDivElement, SegmentedBarProps>(
 );
 
 SegmentedBar.displayName = 'SegmentedBar';
-export { SegmentedBar };
-export type { SegmentedBarProps };

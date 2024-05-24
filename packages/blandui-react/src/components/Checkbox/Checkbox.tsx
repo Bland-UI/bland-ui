@@ -1,12 +1,12 @@
 import { type ComponentProps, forwardRef } from 'react';
 import cn from '../../utils/cn';
 
-interface CheckboxProps extends Omit<ComponentProps<'input'>, 'size'> {
+export interface CheckboxProps extends Omit<ComponentProps<'input'>, 'size'> {
 	className?: string;
 	size?: 'sm' | 'md';
 }
 
-const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
+export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
 	({ className, size = 'md', ...props }, ref) => {
 		const baseCn = [
 			// NOT CHECKED
@@ -44,5 +44,3 @@ const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
 );
 
 Checkbox.displayName = 'Checkbox';
-export { Checkbox };
-export type { CheckboxProps };

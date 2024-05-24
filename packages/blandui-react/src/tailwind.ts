@@ -1,7 +1,11 @@
 import blanduiPlugin from 'blandui';
 
-export function content({ base = './' } = {}) {
-	const path = 'node_modules/blandui-react/dist/*.js';
+interface Content {
+	base?: string;
+  }
+
+export function content({ base = './' }: Content = {}) {
+	const path = 'node_modules/blandui-react/dist/esm/**/*.mjs';
 
 	return `${base}${path}`;
 }

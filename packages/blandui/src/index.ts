@@ -33,6 +33,8 @@ const blanduiPlugin = plugin(({
 			// Spacing
 			borderRadius,
 			borderWidth,
+			outlineWidth: borderWidth,
+			ringWidth:    borderWidth,
 			gap,
 			padding,
 			spacing,
