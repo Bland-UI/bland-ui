@@ -1,4 +1,4 @@
-import blandUI from 'blandui-react';
+import { plugin } from 'blandui-react/tailwind';
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -7,7 +7,7 @@ module.exports = {
 		"../../packages/blandui-react/src/**/*.{ts,tsx}",
 	],
 	plugins: [
-		blandUI.plugin(),
+		plugin(),
 		require('@tailwindcss/forms'),
 	],
 };
