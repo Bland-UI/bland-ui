@@ -1,6 +1,7 @@
 {
 	"name": "@blandui/storybook-react",
 	"version": "0.0.0",
+	"private": true,
 	"scripts": {
 		"dev": "storybook dev -p 6006",
 		"build": "storybook build",
@@ -9,7 +10,7 @@
 	"dependencies": {
 		"@tailwindcss/forms": "^0.5.7",
 		"autoprefixer": "^10.4.19",
-		"blandui-react": "workspace:*",
+		"@blandui/blandui-react": "workspace:*",
 		"postcss": "^8.4.38",
 		"tailwindcss": "^3.4.3",
 		"typescript": "^5.4.5"
