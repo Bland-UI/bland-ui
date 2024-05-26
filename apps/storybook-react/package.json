@@ -8,9 +8,9 @@
 		"start": "npx http-server storybook-static -p $PORT"
 	},
 	"dependencies": {
+		"@blandui/blandui-react": "workspace:*",
 		"@tailwindcss/forms": "^0.5.7",
 		"autoprefixer": "^10.4.19",
-		"@blandui/blandui-react": "workspace:*",
 		"postcss": "^8.4.38",
 		"tailwindcss": "^3.4.3",
 		"typescript": "^5.4.5"
