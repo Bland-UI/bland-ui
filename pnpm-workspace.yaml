@@ -1,4 +1,3 @@
 packages:
-  - 'apps/storybook-react/**'
-  - 'packages/blandui-react/**'
-  - 'packages/blandui/**'
+  - 'app/**'
+  - 'packages/**'

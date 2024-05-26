@@ -141,6 +141,16 @@ export default {
 	'input-surface-rest':  colors.gray[50],
 	'input-surface-hover': colors.gray[100],
 
+	// TOGGLE
+	'toggle-surface-checked':          colors.carbon[1000],
+	'toggle-surface-checked-disabled': colors.gray[200],
+
+	'toggle-surface-unchecked':          colors.gray[200],
+	'toggle-surface-unchecked-disabled': colors.gray[100],
+
+	'toggle-knob-rest':     colors.gray[0],
+	'toggle-knob-disabled': colors.gray[400],
+
 	// MENU
 	'menu-surface-rest':    colors.gray[0],
 	'menu-surface-hover':   colors.gray[50],
