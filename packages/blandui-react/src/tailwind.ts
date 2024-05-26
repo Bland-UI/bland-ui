@@ -1,11 +1,11 @@
-import blanduiPlugin from 'blandui';
+import blanduiPlugin from '@blandui/blandui';
 
 interface Content {
 	base?: string;
-  }
+}
 
 export function content({ base = './' }: Content = {}) {
-	const path = 'node_modules/blandui-react/dist/esm/**/*.mjs';
+	const path = 'node_modules/@blandui/blandui-react/dist/esm/**/*.mjs';
 
 	return `${base}${path}`;
 }
