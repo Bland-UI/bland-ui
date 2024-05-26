@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Toggle } from '.';
+import { Toggle } from '@blandui/blandui-react';
 
 const meta: Meta<typeof Toggle> = {
 	title:     'Component/Toggle',
