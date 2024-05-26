@@ -1,6 +1,6 @@
 {
 	"name": "@blandui/blandui",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": " A generic UI kit. This package includes a comprehensive design system and a Tailwind CSS plugin for seamless styling integration. Designed to be simple and customizable, BlandUi provides the components you need for your everyday projects. Access the Figma file via our website for detailed design resources.",
 	"main": "dist/cjs/index.cjs",
 	"module": "dist/esm/index.mjs",
