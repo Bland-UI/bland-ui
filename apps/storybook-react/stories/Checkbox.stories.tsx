@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Checkbox } from './Checkbox';
+import { Checkbox } from '@blandui/blandui-react';
 
 const meta: Meta<typeof Checkbox> = {
 	title:     'Component/Checkbox',
