@@ -13,6 +13,7 @@
 		"dev:blandui": "pnpm --filter blandui dev",
 		"dev:blandui-react": "pnpm --filter blandui-react dev",
 		"start:storybook-react": "pnpm --filter storybook-react start",
+		"prepare": "pnpm run build",
 		"changeset": "changeset",
 		"release": "changeset publish"
 	},
