@@ -1,6 +1,6 @@
 import plugin from 'tailwindcss/plugin';
 import forms from '@tailwindcss/forms';
-import typogaphy from './Typogaphy';
+import typography from './Typography';
 import boxShadow from './Effect/boxShadow';
 import colors from './Color/colors';
 import backgroundColor from './Color/backgroundColor';
@@ -15,7 +15,7 @@ import borderWidth from './Spacing/borderWidth';
 const blanduiPlugin = plugin(({
 	addUtilities,
 }) => {
-	addUtilities(typogaphy);
+	addUtilities(typography);
 }, {
 	theme: {
 		extend: {
