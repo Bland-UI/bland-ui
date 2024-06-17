@@ -16,11 +16,17 @@ const classMap = {
 	body:    { lg: 'body-lg', md: 'body-md', sm: 'body-sm' },
 };
 
+const weightMap = {
+	regular: 'font-normal',
+	medium:  'font-medium',
+	bold:    'font-semibold',
+};
+
 export interface TypographyProps extends PropsWithChildren {
 	className?: string;
 	size?: 'sm' | 'md' | 'lg';
 	type?: 'display' | 'heading' | 'title' | 'body';
-	weight?: 'regular' | 'bold';
+	weight?: 'regular' | 'medium' | 'bold';
 	as?: ElementType;
 }
 
@@ -38,7 +44,7 @@ export const Typography = forwardRef(
 		ref,
 	) => {
 		const Component = as || elementMap[type][size];
-		const classes = cn(classMap[type][size], weight === 'bold' ? 'font-semibold' : 'font-normal', className);
+		const classes = cn(classMap[type][size], weightMap[weight], className);
 
 		return (
 			<Component ref={ref} className={classes} {...props}>

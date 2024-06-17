@@ -41,6 +41,7 @@
 	"dependencies": {
 		"@blandui/blandui": "workspace:*",
 		"clsx": "^2.1.1",
+		"lucide-react": "^0.395.0",
 		"tailwind-merge": "^2.3.0"
 	},
 	"devDependencies": {
