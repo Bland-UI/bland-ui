@@ -1,11 +1,11 @@
-import { forwardRef, useCallback } from 'react';
+import { ReactNode, forwardRef, useCallback } from 'react';
 import cn from '../../utils/cn';
 
 export interface SegmentedBarProps {
 	className?: string;
 	size?: 'md' | 'lg';
 	activeTab?: number | string;
-	tabs?: Array<{ label: string; value: number | string }>;
+	tabs?: Array<{ label: string | ReactNode; value: number | string }>;
 	onClick?: (value: number | string) => void;
 }
 
