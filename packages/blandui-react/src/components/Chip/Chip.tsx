@@ -1,4 +1,4 @@
-import { ComponentProps, forwardRef } from 'react';
+import { ComponentProps, MouseEvent, forwardRef } from 'react';
 import { X } from 'lucide-react';
 import cn from '../../utils/cn';
 
@@ -14,6 +14,8 @@ export interface ChipProps extends ComponentProps<'div'> {
 
 	countableClassName?: string;
 	count?: number;
+
+	onClick?: (event: MouseEvent<HTMLDivElement>) => void;
 }
 
 export const Chip = forwardRef<HTMLDivElement, ChipProps>((
@@ -28,6 +30,9 @@ export const Chip = forwardRef<HTMLDivElement, ChipProps>((
 
 		countableClassName,
 		count = 0,
+
+		onClick,
+
 		...props
 	},
 	ref,
@@ -68,10 +73,10 @@ export const Chip = forwardRef<HTMLDivElement, ChipProps>((
 	);
 
 	return (
-		<div className={chipCn} ref={ref} {...props}>
+		<div className={chipCn} ref={ref} onClick={type === 'cancellable' ? undefined : onClick} {...props}>
 			{ children }
 
-			{ type === 'cancellable' && <span className={cancellableCn}>
+			{ type === 'cancellable' && <span className={cancellableCn} onClick={onClick}>
 				<X size="0.75rem" className="text-subtle" />
 			</span>}
 
