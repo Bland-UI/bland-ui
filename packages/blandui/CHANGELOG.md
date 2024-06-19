@@ -1,5 +1,11 @@
 # @blandui/blandui
 
+## 0.0.3
+
+### Patch Changes
+
+- [#6](https://github.com/Bland-UI/blandui/pull/6) [`cbb9d7c`](https://github.com/Bland-UI/blandui/commit/cbb9d7c55aee4802f9f0d964573245c5f9483bc2) Thanks [@lludol](https://github.com/lludol)! - CSS var are now available for colors
+
 ## 0.0.2
 
 ### Patch Changes
