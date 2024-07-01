@@ -1,5 +1,11 @@
 # @blandui/blandui
 
+## 0.0.4
+
+### Patch Changes
+
+- [#8](https://github.com/Bland-UI/blandui/pull/8) [`ba2110c`](https://github.com/Bland-UI/blandui/commit/ba2110c46af8a34a9903366dd4457b4b097a6ca8) Thanks [@lludol](https://github.com/lludol)! - We can now customize more the style of the Button component
+
 ## 0.0.3
 
 ### Patch Changes

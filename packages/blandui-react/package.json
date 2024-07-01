@@ -1,6 +1,6 @@
 {
 	"name": "@blandui/blandui-react",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "A generic UI kit for React. This library offers a collection of reusable, customizable, and accessible React components based on the BlandUi design system. Ideal for everyday projects, these components are designed as simply as possible to allow easy customization and integration into any project.",
 	"main": "dist/cjs/index.cjs",
 	"module": "dist/esm/index.mjs",
