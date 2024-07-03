@@ -112,4 +112,8 @@ export default {
 	'btn-warning-stroke-pressed':  colors.amber[700],
 	'btn-warning-stroke-focused':  colors.amber[700],
 	'btn-warning-stroke-disabled': colors.gray[200],
+
+	// RADIO BUTTON
+	'radio-btn-checked':          colors.carbon[1000],
+	'radio-btn-checked-disabled': colors.gray[300],
 };

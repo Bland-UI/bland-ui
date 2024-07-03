@@ -55,4 +55,12 @@ export default {
 	'btn-warning-stroke-rest':     colors.amber[500],
 	'btn-warning-stroke-focused':  colors.amber[200],
 	'btn-warning-stroke-disabled': colors.gray[100],
+
+	// RADIO BUTTON
+	'radio-btn':          colors.gray[200],
+	'radio-btn-disabled': colors.gray[100],
+
+	'radio-btn-checked': colors.gray[0],
+	'radio-btn-hover':   colors.carbon[100],
+	'radio-btn-focused': colors.carbon[300],
 };

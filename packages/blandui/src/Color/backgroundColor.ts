@@ -117,6 +117,9 @@ export default {
 	'badge-amber-primary':   colors.amber[600],
 	'badge-amber-secondary': colors.amber[100],
 
+	// RADIO BUTTON
+	'radio-btn': colors.gray[50],
+
 	// SURFACE
 	'surface-4': colors.gray[0],
 	'surface-3': colors.gray[50],
