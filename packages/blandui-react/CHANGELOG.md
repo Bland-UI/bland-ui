@@ -1,5 +1,14 @@
 # @blandui/blandui-react
 
+## 0.0.6
+
+### Patch Changes
+
+- [#10](https://github.com/Bland-UI/blandui/pull/10) [`6242551`](https://github.com/Bland-UI/blandui/commit/6242551e13fb7ca2ed789d1afaab91250b5c9fce) Thanks [@lludol](https://github.com/lludol)! - RadioButton component added
+
+- Updated dependencies [[`6242551`](https://github.com/Bland-UI/blandui/commit/6242551e13fb7ca2ed789d1afaab91250b5c9fce)]:
+  - @blandui/blandui@0.0.5
+
 ## 0.0.5
 
 ### Patch Changes
