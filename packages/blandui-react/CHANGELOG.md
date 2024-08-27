@@ -1,5 +1,11 @@
 # @blandui/blandui-react
 
+## 0.0.7
+
+### Patch Changes
+
+- [#12](https://github.com/Bland-UI/blandui/pull/12) [`f4475f1`](https://github.com/Bland-UI/blandui/commit/f4475f1f0bd3a434a0c481b568e17c89f06e9980) Thanks [@lludol](https://github.com/lludol)! - BreadCrumb added
+
 ## 0.0.6
 
 ### Patch Changes
