@@ -1,4 +1,5 @@
 export * from './components/Badge';
+export * from './components/BreadCrumb';
 export * from './components/Button';
 export * from './components/Checkbox';
 export * from './components/Chip';
