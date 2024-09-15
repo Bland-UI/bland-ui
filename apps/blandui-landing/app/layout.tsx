@@ -28,7 +28,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<head>
-				<PlausibleProvider domain="blandui.up.railway.app" customDomain='plausible-analytics-pulpopush.up.railway.app' selfHosted/>
+				<PlausibleProvider domain="blandui.up.railway.app" customDomain='https://plausible-analytics-pulpopush.up.railway.app' selfHosted/>
 			</head>
 			<body className={`${firaSans.className} antialiased  bg-surface-4`}>
 				<Header />
