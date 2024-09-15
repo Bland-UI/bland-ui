@@ -13,6 +13,7 @@
     "@icons-pack/react-simple-icons": "^10.0.0",
     "lucide-react": "^0.395.0",
     "next": "14.2.11",
+    "next-plausible": "^3.12.2",
     "react": "^18",
     "react-dom": "^18"
   },

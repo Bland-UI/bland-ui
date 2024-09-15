@@ -2,10 +2,12 @@ import type { Metadata } from 'next';
 // eslint-disable-next-line camelcase
 import { Fira_Sans } from 'next/font/google';
 import { ReactNode } from 'react';
+import PlausibleProvider from 'next-plausible';
 
-import './globals.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
+
+import './globals.css';
 
 const firaSans = Fira_Sans({
 	subsets: ['latin'],
@@ -25,6 +27,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
+			<head>
+				<PlausibleProvider domain="blandui.up.railway.app" customDomain='plausible-analytics-pulpopush.up.railway.app' selfHosted/>
+			</head>
 			<body className={`${firaSans.className} antialiased  bg-surface-4`}>
 				<Header />
 				{children}
