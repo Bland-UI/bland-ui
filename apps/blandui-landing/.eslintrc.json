@@ -1,0 +1,11 @@
+{
+  "extends": ["next/core-web-vitals", "next/typescript", "eslint-config-lludol"],
+  "rules": {
+	"react-hooks/exhaustive-deps": "error",
+	"require-jsdoc": "off",
+	"no-unused-vars": "off",
+	"@typescript-eslint/no-unused-vars": "error",
+	"max-len": "off",
+	"@typescript-eslint/no-explicit-any": "warn"
+  }
+}

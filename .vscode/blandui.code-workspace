@@ -5,6 +5,10 @@
 			"path": "../"
 		},
 		{
+			"name": "apps/blandui-landing",
+			"path": "../apps/blandui-landing"
+		},
+		{
 			"name": "apps/storybook-react",
 			"path": "../apps/storybook-react"
 		},
