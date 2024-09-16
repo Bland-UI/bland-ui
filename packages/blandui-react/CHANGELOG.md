@@ -1,5 +1,11 @@
 # @blandui/blandui-react
 
+## 0.0.9
+
+### Patch Changes
+
+- [`db586b2`](https://github.com/Bland-UI/blandui/commit/db586b29e78dbfb0824d2aa034bd7f69296b8fa1) Thanks [@lludol](https://github.com/lludol)! - as props added to Button
+
 ## 0.0.8
 
 ### Patch Changes
