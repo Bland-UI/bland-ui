@@ -1,5 +1,12 @@
 # @blandui/storybook-react
 
+## 0.0.6
+
+### Patch Changes
+
+- Updated dependencies [[`fafd031`](https://github.com/Bland-UI/blandui/commit/fafd0311af66e0509bbb10757259b65d215c0577)]:
+  - @blandui/blandui-react@0.0.8
+
 ## 0.0.5
 
 ### Patch Changes
