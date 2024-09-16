@@ -121,3 +121,23 @@ export const Warning: Story = {
 		</div>
 	),
 };
+
+export const ButtonAsLink: Story = {
+	render: () => (
+		<div className="flex flex-col gap-lg items-start justify-center">
+			<div className="flex gap-lg">
+					<Button
+						size="md"
+						variant="primary"
+						color="brand"
+
+						as="a"
+						href="https://blandui.com"
+						target="_blank"
+					>
+						BlandUI.com
+					</Button>
+			</div>
+		</div>
+	),
+};
