@@ -14,7 +14,10 @@ const Header = () => (
 				<div className="p-xs flex sm:hidden items-center justify-center bg-surface-3 rounded-sm text-bold">
 					<Menu size="1.25rem"/>
 				</div>
-				<Logo />
+
+				<a href="/">
+					<Logo />
+				</a>
 			</div>
 
 			<div className="hidden sm:flex gap-lg">

@@ -40,18 +40,18 @@ const Footer = () => (
 
 			<div className="flex sm:flex-row flex-col gap-3xl sm:gap-2xl">
 				<div className="flex gap-xl sm:gap-2xl">
-					<a href="#">Docs</a>
-					<a href="#">Components</a>
-					<a href="#">Playground</a>
-					<a href="#">About</a>
+					<a href="/coming-soon">Docs</a>
+					<a href="/coming-soon">Components</a>
+					<a href="https://playground.blandui.com" target='_blank'>Playground</a>
+					<a href="/coming-soon">About</a>
 				</div>
 
 				<div className="flex justify-center gap-xl sm:gap-2xl">
-					<a href="#">
+					<a href="https://www.figma.com/community/file/1354188872568801069/bland-ui-kit-for-figma" target='_blank'>
 						<SiFigma size="1.5rem"/>
 					</a>
 
-					<a href="#">
+					<a href="https://github.com/Bland-UI/blandui" target='_blank'>
 						<SiGithub size="1.5rem"/>
 					</a>
 				</div>
