@@ -5,6 +5,7 @@ import {
 } from '@blandui/blandui-react';
 import { SiFigma } from '@icons-pack/react-simple-icons';
 import { ExternalLink } from 'lucide-react';
+import Link from 'next/link';
 import { useState } from 'react';
 
 const Section1 = () => {
@@ -28,13 +29,13 @@ const Section1 = () => {
 				</Typography>
 
 				<div className="flex gap-md">
-					<Button color='brand' variant='primary' size="md">
+					<Button color='brand' variant='primary' size="md" as={Link} href="https://www.figma.com/community/file/1354188872568801069/bland-ui-kit-for-figma" target="_blank">
 						<SiFigma size="1.25rem"/>
-					Get This UI Kit
+						Get This UI Kit
 					</Button>
 
-					<Button color='brand' variant='secondary' size="md">
-					View Docs
+					<Button color='brand' variant='secondary' size="md" as={Link} href="/coming-soon">
+						View Docs
 					</Button>
 				</div>
 			</div>
@@ -78,7 +79,7 @@ const Section1 = () => {
 
 					<div className="flex gap-2xl items-center">
 						<TextInput
-							label="Label" value="User input"
+							label="Label" value="User input" readOnly
 							inputSize="md" variant='warning'
 							helperText="I am giving a warning here"
 						/>
@@ -89,7 +90,7 @@ const Section1 = () => {
 				</div>
 
 				<div className="hidden sm:flex justify-center">
-					<Button color='brand' variant='primary' size="md" className="shadow-brand-far-subtle">
+					<Button color='brand' variant='primary' size="md" className="shadow-brand-far-subtle" as={Link} href="https://playground.blandui.com" target="_blank">
 						Explore in Playground
 						<ExternalLink size="1.25rem"/>
 					</Button>

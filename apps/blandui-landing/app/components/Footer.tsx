@@ -40,10 +40,10 @@ const Footer = () => (
 
 			<div className="flex sm:flex-row flex-col gap-3xl sm:gap-2xl">
 				<div className="flex gap-xl sm:gap-2xl">
-					<a href="/coming-soon">Docs</a>
-					<a href="/coming-soon">Components</a>
-					<a href="https://playground.blandui.com" target='_blank'>Playground</a>
-					<a href="/coming-soon">About</a>
+					<a href="/coming-soon" className="hover:underline">Docs</a>
+					<a href="/coming-soon" className="hover:underline">Components</a>
+					<a href="https://playground.blandui.com" target='_blank' className="hover:underline">Playground</a>
+					<a href="/coming-soon" className="hover:underline">About</a>
 				</div>
 
 				<div className="flex justify-center gap-xl sm:gap-2xl">
