@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 // eslint-disable-next-line camelcase
 import { Fira_Sans } from 'next/font/google';
 import { ReactNode } from 'react';
-import PlausibleProvider from 'next-plausible';
+import Script from 'next/script';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -27,14 +27,16 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<head>
-				<PlausibleProvider domain="blandui.com" customDomain='https://plausible-analytics-pulpopush.up.railway.app' selfHosted/>
-			</head>
 			<body className={`${firaSans.className} antialiased  bg-surface-4 min-h-screen`}>
 				<Header />
 				{children}
 				<Footer/>
 			</body>
+			<Script
+				defer
+				src={process.env.NEXT_PUBLIC_UMAMI_SCRIPT_URL}
+				data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID}
+			/>
 		</html>
 	);
 }
